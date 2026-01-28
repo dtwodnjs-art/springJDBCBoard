@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -95,11 +96,12 @@ body {
 
 	<div class="write-container">
 		<div class="header">
-			<h1>게시판 입력실패</h1>
+			<h1>${message}</h1>
 		</div>
 		 <div class="btn-area">
            <a href="/board/insertForm"><button  class="btn">게시판등록</button></a>
-            <button  class="btn">게시판리스트</button>
+           <a href="/board/boardList"><button  class="btn">게시판리스트</button></a>
+            
         </div>
 	</div>
 </body>
